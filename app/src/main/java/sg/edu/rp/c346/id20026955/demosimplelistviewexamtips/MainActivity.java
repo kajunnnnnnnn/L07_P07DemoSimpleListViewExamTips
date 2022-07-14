@@ -25,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
         examTipsArray[3] = "Create a few empty Android projects to speed up your coding during the exam";
         examTipsArray[4] = "Ensure that your Android Studio is up and running before the exam";
 
-        ArrayAdapter adapter = new ArrayAdapter<>(this
-        , android.R.layout.simple_list_item_1,examTipsArray);
+        ArrayAdapter adapter = new ArrayAdapter<>(this //where
+        , android.R.layout.simple_list_item_1 //
+                ,examTipsArray); //what
 
         lvExamTip.setAdapter(adapter);
     }
